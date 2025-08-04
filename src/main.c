@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "../cli_utils/lib/cli_utils.h"
 
-// print usage::
+// print usage
 void usage(const char* app_name)
 {
-    printf("Usage:    %s", *app_name);
+    printf("Usage:    %s", app_name);
 }
+
 
 int main(int argc, char** argv)
 {
@@ -14,5 +15,8 @@ int main(int argc, char** argv)
     {
         usage(app_name);
     }
+
+
+    
     return 0;
 }

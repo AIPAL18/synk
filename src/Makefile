@@ -1,5 +1,11 @@
 main: main.c
-	gcc -std=c23 -Wall -Wextra -Werror -fexec-charset=UTF-8 "*.c" -o "../build/synk.exe"
+	gcc -std=c23 -Wall -Wextra -Werror -fexec-charset=UTF-8 $\
+		"*.c" $\
+		"../cli_utils/src/*.c" $\
+		-o "../build/synk.exe"
+	../build/synk.exe
+
+run: ../build/synk.exe
 	../build/synk.exe
 
 debug: main.c
