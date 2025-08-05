@@ -1,18 +1,6 @@
 #include <stdio.h>
 #include "../cli_utils/lib/cli_utils.h"
 
-// print usage
-void usage(const char* app_name)
-{
-    printf("Usage:    %s", app_name);
-    printf("          source ... target");
-}
-
-void help()
-{
-
-}
-
 int main(int argc, char** argv)
 {
     char* app_name = get_exe(argv[0]);
