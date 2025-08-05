@@ -5,8 +5,13 @@
 void usage(const char* app_name)
 {
     printf("Usage:    %s", app_name);
+    printf("          source ... target");
 }
 
+void help()
+{
+
+}
 
 int main(int argc, char** argv)
 {
